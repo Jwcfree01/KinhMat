@@ -1,0 +1,8 @@
+<div class="container">
+<h1>login works!</h1>
+  <form action="" (submit)="login()">
+    <label>Username</label><input (change)="username($any($event).target.value)" type="text">
+    <label>Password</label><input (change)="pass($any($event).target.value)" type="text">
+    <button>Login</button>
+  </form>
+</div>

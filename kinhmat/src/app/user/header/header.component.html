@@ -1,0 +1,190 @@
+<div class="container-fluid">
+  <div class="header">
+    <div class="row">
+      <div class="container-fluid top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-2 d-flex">
+                <!--                <li class="nav-item">-->
+                <!--                  <a class="nav-link menu-top mb-2" aria-current="page" href="#">Tin tức</a>-->
+                <!--                </li>-->
+                <li class="nav-item">
+                  <a class="nav-link menu-top mb-2" [routerLink]="['/trang-nguoi-ban']">Trang người bán</a>
+                </li>
+              </ul>
+              <ul class="d-flex">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle menu-top" href="#" id="navbarDropdown" role="button"
+                     data-bs-toggle="dropdown" aria-expanded="false">
+                    Tài khoản
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+                    <li><a class="dropdown-item" href="#">Đăng kí</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle menu-top" href="#" id="" role="button"
+                     data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-cart-arrow-down"
+                                                                        style="color: yellow"></i>
+                    Giỏ hàng : 0 Sản phẩm
+                  </a>
+                  <!--dùng để hover hiển thị data giỏ hàng-->
+                  <ul class="dropdown-menu dropdown-content mx-4" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">data giỏ hàng</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col-lg col-md">
+          <div class="phone_header">
+            <div class="phone_image">
+              <i class="fa fa-phone" style="font-size: 30px; color: black"></i>
+            </div>
+            <div class="contact_header">
+              <div class="phone_header">
+                Hotline: <a class="fone" href="tel:0981729499">0981729499</a>
+              </div>
+              <div class="time_header" style="padding-left: 10px">
+                Thứ 2 - CN: 9:00 -18:00
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-md">
+          <div class="row d-flex justify-content-center">
+            <img class="d-flex justify-content-center logo"
+                 src="https://firebasestorage.googleapis.com/v0/b/mat-kinh.appspot.com/o/RoomsImages%2F1632409509172?alt=media&token=08022a34-4ed2-4aec-9c78-206ce5fe1398"
+                 alt="">
+          </div>
+          <div class="text-center fw-bold">
+            TRANH THÊU MẮT KÍNH TRUNG THÔNG
+          </div>
+        </div>
+        <div class="col lg col-md">
+          <nav class="navbar navbar-light">
+            <div class="container-fluid">
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!--    <div class="row mt-3 sticky-top">-->
+    <!--      <nav class="navbar navbar-expand-lg navbar-light sticky-top">-->
+    <!--        <div class="container sticky-top">-->
+    <!--          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"-->
+    <!--                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
+    <!--            <span class="navbar-toggler-icon"></span>-->
+    <!--          </button>-->
+    <!--          <div class="collapse navbar-collapse justify-content-center sticky-top" id="navbarNav">-->
+    <!--            <ul class="nav nav-tabs sticky-top" style="color: black">-->
+    <!--              <li class="nav-item">-->
+    <!--                <a class="nav-link menu-list" aria-current="page" href="#">TRANG CHỦ</a>-->
+    <!--              </li>-->
+    <!--              <li class="nav-item dropdown">-->
+    <!--                <a class="nav-link dropdown-toggle menu-list" data-bs-toggle="dropdown" aria-expanded="false"-->
+    <!--                   role="button"-->
+    <!--                   href="#">KÍNH MẮT</a>-->
+    <!--                <ul class="dropdown-menu dropdown-content">-->
+    <!--                  <li><a class="dropdown-item" href="#">Kính thời trang</a></li>-->
+    <!--                  <li><a class="dropdown-item" href="#">Kính trẻ em</a></li>-->
+    <!--                  <li><a class="dropdown-item" href="#">Gọng kính</a></li>-->
+    <!--                  <li><a class="dropdown-item" href="#">Tròng kính</a></li>-->
+    <!--                  <li><a class="dropdown-item" href="#">Đo khúc xạ</a></li>-->
+    <!--                </ul>-->
+    <!--              </li>-->
+    <!--              <li class="nav-item dropdown">-->
+    <!--                <a class="nav-link dropdown-toggle menu-list" data-bs-toggle="dropdown" aria-expanded="false"-->
+    <!--                   role="button"-->
+    <!--                   href="#">TRANH THÊU</a>-->
+    <!--                <ul class="dropdown-menu dropdown-content">-->
+    <!--                  <li><a class="dropdown-item" href="#">Tranh thêu chữ thập</a></li>-->
+    <!--                  <li><a class="dropdown-item" href="#">Tranh đính đá</a></li>-->
+    <!--                  <li><a class="dropdown-item" href="#">Tranh vẽ</a></li>-->
+    <!--                </ul>-->
+    <!--              </li>-->
+    <!--              <li class="nav-item">-->
+    <!--                <a class="nav-link menu-list" href="#">GIỚI THIỆU</a>-->
+    <!--              </li>-->
+    <!--              <li class="nav-item">-->
+    <!--                <a class="nav-link menu-list" href="#">TIN TỨC</a>-->
+    <!--              </li>-->
+    <!--              <li class="nav-item">-->
+    <!--                <a class="nav-link menu-list" href="#">LIÊN HỆ</a>-->
+    <!--              </li>-->
+    <!--            </ul>-->
+    <!--          </div>-->
+    <!--        </div>-->
+    <!--      </nav>-->
+    <!--    </div>-->
+  </div>
+
+</div>
+<div class="row mt-3 sticky-top" id="abc" (scroll)="abc()">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center sticky-top" id="navbarNav">
+        <ul class="nav nav-tabs sticky-top" style="color: black">
+          <li class="nav-item">
+            <a class="nav-link menu-list" aria-current="page" href="#" [routerLink]="['/home']">TRANG CHỦ</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle menu-list" data-bs-toggle="dropdown" aria-expanded="false"
+               role="button"
+               href="#">KÍNH MẮT</a>
+            <ul class="dropdown-menu dropdown-content">
+              <li><a class="dropdown-item" [routerLink]="['/kinh-thoi-trang']">Kính thời trang</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/kinh-tre-em']">Kính trẻ em</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/gong kinh']">Gọng kính</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/trong-kinh']">Tròng kính</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/do-khuc-xa']">Đo khúc xạ</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle menu-list" data-bs-toggle="dropdown" aria-expanded="false"
+               role="button"
+               href="#">TRANH THÊU</a>
+            <ul class="dropdown-menu dropdown-content">
+              <li><a class="dropdown-item" [routerLink]="['/tranh-theu']">Tranh thêu chữ thập</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/tranh-dinh-da']">Tranh đính đá</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/tranh-ve']">Tranh vẽ</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-list" [routerLink]="['/gioi-thieu']">GIỚI THIỆU</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-list" [routerLink]="['/tin-tuc']">TIN TỨC</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-list" [routerLink]="['/lien-he']">LIÊN HỆ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<div>
+</div>

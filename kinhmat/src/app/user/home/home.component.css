@@ -1,0 +1,150 @@
+.image-banner {
+  max-height: 117px;
+}
+
+.abc {
+  position: relative;
+  margin-top: -25px;
+  z-index: 2;
+  color: #E26D5C;
+  background: #f3f3f3;
+  padding: 15px;
+  font-size: 15px;
+  border-radius: .25rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+}
+
+.abc:hover {
+  color: #fff;
+  background: #E26D5C;
+  -webkit-animation: pulse 1.5s infinite;
+}
+
+.dotted {
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+}
+
+.card-content {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 200px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: width 2s;
+  opacity: 0;
+  position: absolute;
+  bottom: 5%;
+  left: 25%;
+}
+
+.card-content:hover .image {
+  opacity: 0.3;
+}
+
+.card-content:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+/*hover product item*/
+.thumbnail {
+  position: relative;
+  overflow: hidden;
+}
+
+.thumbnail a {
+  display: block;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.thumbnail a img {
+  min-width: 160px;
+  height: 230px;
+  transition: all 0.5s;
+}
+
+.nn:hover .thumbnail a img {
+  -webkit-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -o-transform-origin: center;
+  transform-origin: center;
+  transition: all 0.5s;
+}
+
+.nn:hover .thumbnail .view-details-layer {
+  bottom: 0;
+}
+
+.nn .thumbnail .view-details-layer {
+  width: 100%;
+  bottom: -60px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: white;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+  -webkit-transition: all 0.45s ease;
+  -moz-transition: all 0.45s ease;
+  -o-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.prod-price {
+  color: #919191;
+}
+
+.prod-discount {
+  color: red;
+}
+
+.card-width {
+  color: black;
+  /*line-height: 50px;*/
+  text-decoration: none;
+  font-family: 'Old Standard TT', serif;
+  font-size: 18px;
+}
+
+.card-width:hover {
+  color: #04AA6D;
+}
+
+/*dấu chấm sau sản phẩm mới*/
+/*.dotted{*/
+/*  position: relative;*/
+/*}*/
+/*.dotted:after{*/
+/*  content: "";*/
+/*  display: block;*/
+/*  height: 2px;*/
+/*  position: absolute;*/
+/*  !*background-color: #000;*!*/
+/*  border: dotted 2px black;*/
+/*  right: 0;*/
+/*  top: 50%;*/
+/*  left: 13%;*/
+/*  z-index: -2;*/
+/*}*/

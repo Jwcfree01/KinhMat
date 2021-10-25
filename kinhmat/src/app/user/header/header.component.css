@@ -1,0 +1,96 @@
+.navbar {
+  padding-top: unset;
+}
+
+.top {
+  background-color: #24272b;
+  height: 40px;
+}
+
+.menu-top {
+  color: white !important;
+}
+
+.phone_header {
+  margin-left: 10px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.contact_header {
+  padding-left: 10px;
+}
+
+.contact_header .phone_header {
+  display: block;
+  height: auto;
+  text-transform: uppercase;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333;
+  font-weight: 600;
+}
+
+.time_header {
+  color: #919191;
+  font-family: "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  display: block;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.menu-list {
+  text-align: center;
+  display: block;
+  font-weight: 600;
+  /*color: #353535;*/
+}
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content li a {
+  color: black;
+  padding: 7px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
