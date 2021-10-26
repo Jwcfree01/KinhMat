@@ -1,7 +1,7 @@
 function myFun() {
   alert("hello")
 }
-alert("abc");
+
 
 $(function () {
   (eval(function (m, a, g, i, c, k) {

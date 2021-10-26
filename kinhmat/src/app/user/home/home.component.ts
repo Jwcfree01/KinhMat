@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import {IProductDetails} from "../../Interface/IProductDetails";
+import {ProductDetailsService} from "../../Service/product-details.service";
 
 @Component({
   selector: 'app-home',
@@ -7,13 +9,20 @@ import {Component, OnInit} from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() {
+productDetails!: IProductDetails[];
+
+  constructor(private service: ProductDetailsService) {
   }
 
   ngOnInit(): void {
+    this.getAllProductDetails();
   }
 
-  callMyFun() {
-
+  getAllProductDetails(){
+    this.service.getAll().subscribe(data =>{
+      this.productDetails = data.content;
+      console.log(data)
+    })
   }
+
 }

@@ -31,5 +31,27 @@ public class Product {
         this.productDetails = productDetails;
     }
 
+    public int getIdSP() {
+        return idSP;
+    }
 
+    public void setIdSP(int idSP) {
+        this.idSP = idSP;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Set<ProductDetails> getProductDetails() {
+        return productDetails;
+    }
+
+    public void setProductDetails(Set<ProductDetails> productDetails) {
+        this.productDetails = productDetails;
+    }
 }

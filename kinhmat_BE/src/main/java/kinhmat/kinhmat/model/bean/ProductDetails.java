@@ -3,6 +3,7 @@ package kinhmat.kinhmat.model.bean;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Table(name = "product_details")
@@ -20,6 +21,10 @@ public class ProductDetails {
     @JoinColumn(name = "id_sp", nullable = false)
     @JsonBackReference
     private Product product;
+
+    @ManyToMany(mappedBy = "productDetails")
+    @JsonBackReference
+    private Set<Bill> bills;
 
     public ProductDetails() {
     }

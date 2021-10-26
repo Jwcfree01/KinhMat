@@ -113,13 +113,13 @@
   <!--Sản phẩm-->
   <div class="container">
     <div class="row mt-2">
-      <div class="col nn">
+
+      <div class="col nn" *ngFor="let productDetails1 of productDetails">
         <div class="card thumbnail" style="width: 18rem;">
           <a>
             <img [routerLink]="['/details/1']"
-                 src="https://firebasestorage.googleapis.com/v0/b/mat-kinh.appspot.com/o/RoomsImages%2F1632661895570?alt=media&token=a5f14bf0-1cfa-4d63-9ebd-061d5618ad1f"
-                 class="card-img-top" alt="...">
-            <!--            https://firebasestorage.googleapis.com/v0/b/mat-kinh.appspot.com/o/RoomsImages%2F1632565249458?alt=media&token=6254e4a2-7c6a-4d31-8d1e-41a3cbf43cf4-->
+                 ng-src="productDetails1.image"
+                 class="card-img-top" alt="kính rayban">
           </a>
           <div class="view-details-layer">
             <a href="" title="View details">
@@ -127,168 +127,169 @@
             </a>
           </div>
           <div class="card-body text-center">
-            <div class="product-name">First Product</div>
+            <div class="product-name">{{productDetails1.nameSP}}</div>
             <div class="product-price">
-              <span class="prod-price"><del>180.000&#8363;</del></span> &nbsp;
-              <span class="prod-discount">150.000&#8363;</span>
+              <span class="prod-price"><del>{{productDetails1.price}}&#8363;</del></span> &nbsp;
+              <span class="prod-discount">{{productDetails1.promotion_price}}&#8363;</span>
             </div>
           </div>
         </div>
       </div>
-      <div class="col nn">
-        <div class="card thumbnail" style="width: 18rem;">
-          <a href="">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/mat-kinh.appspot.com/o/RoomsImages%2F1632661983055?alt=media&token=58aa3c92-47ad-4a71-8c49-6ffb8e2eeb6a"
-              class="card-img-top" alt="...">
-            <!--            https://firebasestorage.googleapis.com/v0/b/mat-kinh.appspot.com/o/RoomsImages%2F1632565321680?alt=media&token=6adfb974-792c-4aba-97d7-6abdc55270b5-->
-          </a>
-          <div class="view-details-layer">
-            <a href="" title="View details">
-              <button class="btn btn-dark">ADD TO CARD</button>
-            </a>
-          </div>
-          <div class="card-body text-center">
-            <div class="product-name">First Product</div>
-            <div class="product-price">
-              <span class="prod-price"><del>180.000&#8363;</del></span> &nbsp;
-              <span class="prod-discount">150.000&#8363;</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col nn">
-        <div class="card thumbnail" style="width: 18rem;">
-          <a href="">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/mat-kinh.appspot.com/o/RoomsImages%2F1632662165695?alt=media&token=ea708610-957b-4916-9c2e-add7def413b1"
-              class="card-img-top" alt="...">
-            <!--            https://firebasestorage.googleapis.com/v0/b/mat-kinh.appspot.com/o/RoomsImages%2F1632565367647?alt=media&token=a0a121d7-3c01-4298-9360-4001749c18f9-->
-          </a>
-          <div class="view-details-layer">
-            <a href="" title="View details">
-              <button class="btn btn-dark">ADD TO CARD</button>
-            </a>
-          </div>
-          <div class="card-body text-center">
-            <div class="product-name">First Product</div>
-            <div class="product-price">
-              <span class="prod-price"><del>180.000&#8363;</del></span> &nbsp;
-              <span class="prod-discount">150.000&#8363;</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col nn">
-        <div class="card thumbnail" style="width: 18rem;">
-          <a href="">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/mat-kinh.appspot.com/o/RoomsImages%2F1632662264864?alt=media&token=1872cae3-128b-45d8-bb75-b012dd967031"
-              class="card-img-top" alt="...">
-            <!--            https://firebasestorage.googleapis.com/v0/b/mat-kinh.appspot.com/o/RoomsImages%2F1632565412534?alt=media&token=b2272a13-4e3e-4e3d-9ecf-35794ed3de11-->
-          </a>
-          <div class="view-details-layer">
-            <a href="" title="View details">
-              <button class="btn btn-dark">ADD TO CARD</button>
-            </a>
-          </div>
-          <div class="card-body text-center">
-            <div class="product-name">First Product</div>
-            <div class="product-price">
-              <span class="prod-price"><del>180.000&#8363;</del></span> &nbsp;
-              <span class="prod-discount">150.000&#8363;</span>
-            </div>
-          </div>
-        </div>
-      </div>
+
+<!--      <div class="col nn">-->
+<!--        <div class="card thumbnail" style="width: 18rem;">-->
+<!--          <a href="">-->
+<!--            <img-->
+<!--              src="https://firebasestorage.googleapis.com/v0/b/mat-kinh.appspot.com/o/RoomsImages%2F1632661983055?alt=media&token=58aa3c92-47ad-4a71-8c49-6ffb8e2eeb6a"-->
+<!--              class="card-img-top" alt="...">-->
+<!--            &lt;!&ndash;            https://firebasestorage.googleapis.com/v0/b/mat-kinh.appspot.com/o/RoomsImages%2F1632565321680?alt=media&token=6adfb974-792c-4aba-97d7-6abdc55270b5&ndash;&gt;-->
+<!--          </a>-->
+<!--          <div class="view-details-layer">-->
+<!--            <a href="" title="View details">-->
+<!--              <button class="btn btn-dark">ADD TO CARD</button>-->
+<!--            </a>-->
+<!--          </div>-->
+<!--          <div class="card-body text-center">-->
+<!--            <div class="product-name">First Product</div>-->
+<!--            <div class="product-price">-->
+<!--              <span class="prod-price"><del>180.000&#8363;</del></span> &nbsp;-->
+<!--              <span class="prod-discount">150.000&#8363;</span>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col nn">-->
+<!--        <div class="card thumbnail" style="width: 18rem;">-->
+<!--          <a href="">-->
+<!--            <img-->
+<!--              src="https://firebasestorage.googleapis.com/v0/b/mat-kinh.appspot.com/o/RoomsImages%2F1632662165695?alt=media&token=ea708610-957b-4916-9c2e-add7def413b1"-->
+<!--              class="card-img-top" alt="...">-->
+<!--            &lt;!&ndash;            https://firebasestorage.googleapis.com/v0/b/mat-kinh.appspot.com/o/RoomsImages%2F1632565367647?alt=media&token=a0a121d7-3c01-4298-9360-4001749c18f9&ndash;&gt;-->
+<!--          </a>-->
+<!--          <div class="view-details-layer">-->
+<!--            <a href="" title="View details">-->
+<!--              <button class="btn btn-dark">ADD TO CARD</button>-->
+<!--            </a>-->
+<!--          </div>-->
+<!--          <div class="card-body text-center">-->
+<!--            <div class="product-name">First Product</div>-->
+<!--            <div class="product-price">-->
+<!--              <span class="prod-price"><del>180.000&#8363;</del></span> &nbsp;-->
+<!--              <span class="prod-discount">150.000&#8363;</span>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col nn">-->
+<!--        <div class="card thumbnail" style="width: 18rem;">-->
+<!--          <a href="">-->
+<!--            <img-->
+<!--              src="https://firebasestorage.googleapis.com/v0/b/mat-kinh.appspot.com/o/RoomsImages%2F1632662264864?alt=media&token=1872cae3-128b-45d8-bb75-b012dd967031"-->
+<!--              class="card-img-top" alt="...">-->
+<!--            &lt;!&ndash;            https://firebasestorage.googleapis.com/v0/b/mat-kinh.appspot.com/o/RoomsImages%2F1632565412534?alt=media&token=b2272a13-4e3e-4e3d-9ecf-35794ed3de11&ndash;&gt;-->
+<!--          </a>-->
+<!--          <div class="view-details-layer">-->
+<!--            <a href="" title="View details">-->
+<!--              <button class="btn btn-dark">ADD TO CARD</button>-->
+<!--            </a>-->
+<!--          </div>-->
+<!--          <div class="card-body text-center">-->
+<!--            <div class="product-name">First Product</div>-->
+<!--            <div class="product-price">-->
+<!--              <span class="prod-price"><del>180.000&#8363;</del></span> &nbsp;-->
+<!--              <span class="prod-discount">150.000&#8363;</span>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
     </div>
-    <div class="row mt-5">
-      <div class="col nn">
-        <div class="card thumbnail" style="width: 18rem;">
-          <a href="">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/mat-kinh.appspot.com/o/RoomsImages%2F1632565249458?alt=media&token=6254e4a2-7c6a-4d31-8d1e-41a3cbf43cf4"
-              class="card-img-top" alt="...">
-          </a>
-          <div class="view-details-layer">
-            <a href="" title="View details">
-              <button class="btn btn-dark">ADD TO CARD</button>
-            </a>
-          </div>
-          <div class="card-body text-center">
-            <div class="product-name">First Product</div>
-            <div class="product-price">
-              <span class="prod-price"><del>180.000&#8363;</del></span> &nbsp;
-              <span class="prod-discount">150.000&#8363;</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col nn">
-        <div class="card thumbnail" style="width: 18rem;">
-          <a href="">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/mat-kinh.appspot.com/o/RoomsImages%2F1632565321680?alt=media&token=6adfb974-792c-4aba-97d7-6abdc55270b5"
-              class="card-img-top" alt="...">
-          </a>
-          <div class="view-details-layer">
-            <a href="" title="View details">
-              <button class="btn btn-dark">ADD TO CARD</button>
-            </a>
-          </div>
-          <div class="card-body text-center">
-            <div class="product-name">First Product</div>
-            <div class="product-price">
-              <span class="prod-price"><del>180.000&#8363;</del></span> &nbsp;
-              <span class="prod-discount">150.000&#8363;</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col nn">
-        <div class="card thumbnail" style="width: 18rem;">
-          <a href="">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/mat-kinh.appspot.com/o/RoomsImages%2F1632565367647?alt=media&token=a0a121d7-3c01-4298-9360-4001749c18f9"
-              class="card-img-top" alt="...">
-          </a>
-          <div class="view-details-layer">
-            <a href="" title="View details">
-              <button class="btn btn-dark">ADD TO CARD</button>
-            </a>
-          </div>
-          <div class="card-body text-center">
-            <div class="product-name">First Product</div>
-            <div class="product-price">
-              <span class="prod-price"><del>180.000&#8363;</del></span> &nbsp;
-              <span class="prod-discount">150.000&#8363;</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col nn">
-        <div class="card thumbnail" style="width: 18rem;">
-          <a href="">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/mat-kinh.appspot.com/o/RoomsImages%2F1632565412534?alt=media&token=b2272a13-4e3e-4e3d-9ecf-35794ed3de11"
-              class="card-img-top" alt="...">
-          </a>
-          <div class="view-details-layer">
-            <a href="" title="View details">
-              <button class="btn btn-dark">ADD TO CARD</button>
-            </a>
-          </div>
-          <div class="card-body text-center">
-            <div class="product-name">First Product</div>
-            <div class="product-price">
-              <span class="prod-price"><del>180.000&#8363;</del></span> &nbsp;
-              <span class="prod-discount">150.000&#8363;</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<!--    <div class="row mt-5">-->
+<!--      <div class="col nn">-->
+<!--        <div class="card thumbnail" style="width: 18rem;">-->
+<!--          <a href="">-->
+<!--            <img-->
+<!--              src="https://firebasestorage.googleapis.com/v0/b/mat-kinh.appspot.com/o/RoomsImages%2F1632565249458?alt=media&token=6254e4a2-7c6a-4d31-8d1e-41a3cbf43cf4"-->
+<!--              class="card-img-top" alt="...">-->
+<!--          </a>-->
+<!--          <div class="view-details-layer">-->
+<!--            <a href="" title="View details">-->
+<!--              <button class="btn btn-dark">ADD TO CARD</button>-->
+<!--            </a>-->
+<!--          </div>-->
+<!--          <div class="card-body text-center">-->
+<!--            <div class="product-name">First Product</div>-->
+<!--            <div class="product-price">-->
+<!--              <span class="prod-price"><del>180.000&#8363;</del></span> &nbsp;-->
+<!--              <span class="prod-discount">150.000&#8363;</span>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col nn">-->
+<!--        <div class="card thumbnail" style="width: 18rem;">-->
+<!--          <a href="">-->
+<!--            <img-->
+<!--              src="https://firebasestorage.googleapis.com/v0/b/mat-kinh.appspot.com/o/RoomsImages%2F1632565321680?alt=media&token=6adfb974-792c-4aba-97d7-6abdc55270b5"-->
+<!--              class="card-img-top" alt="...">-->
+<!--          </a>-->
+<!--          <div class="view-details-layer">-->
+<!--            <a href="" title="View details">-->
+<!--              <button class="btn btn-dark">ADD TO CARD</button>-->
+<!--            </a>-->
+<!--          </div>-->
+<!--          <div class="card-body text-center">-->
+<!--            <div class="product-name">First Product</div>-->
+<!--            <div class="product-price">-->
+<!--              <span class="prod-price"><del>180.000&#8363;</del></span> &nbsp;-->
+<!--              <span class="prod-discount">150.000&#8363;</span>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col nn">-->
+<!--        <div class="card thumbnail" style="width: 18rem;">-->
+<!--          <a href="">-->
+<!--            <img-->
+<!--              src="https://firebasestorage.googleapis.com/v0/b/mat-kinh.appspot.com/o/RoomsImages%2F1632565367647?alt=media&token=a0a121d7-3c01-4298-9360-4001749c18f9"-->
+<!--              class="card-img-top" alt="...">-->
+<!--          </a>-->
+<!--          <div class="view-details-layer">-->
+<!--            <a href="" title="View details">-->
+<!--              <button class="btn btn-dark">ADD TO CARD</button>-->
+<!--            </a>-->
+<!--          </div>-->
+<!--          <div class="card-body text-center">-->
+<!--            <div class="product-name">First Product</div>-->
+<!--            <div class="product-price">-->
+<!--              <span class="prod-price"><del>180.000&#8363;</del></span> &nbsp;-->
+<!--              <span class="prod-discount">150.000&#8363;</span>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col nn">-->
+<!--        <div class="card thumbnail" style="width: 18rem;">-->
+<!--          <a href="">-->
+<!--            <img-->
+<!--              src="https://firebasestorage.googleapis.com/v0/b/mat-kinh.appspot.com/o/RoomsImages%2F1632565412534?alt=media&token=b2272a13-4e3e-4e3d-9ecf-35794ed3de11"-->
+<!--              class="card-img-top" alt="...">-->
+<!--          </a>-->
+<!--          <div class="view-details-layer">-->
+<!--            <a href="" title="View details">-->
+<!--              <button class="btn btn-dark">ADD TO CARD</button>-->
+<!--            </a>-->
+<!--          </div>-->
+<!--          <div class="card-body text-center">-->
+<!--            <div class="product-name">First Product</div>-->
+<!--            <div class="product-price">-->
+<!--              <span class="prod-price"><del>180.000&#8363;</del></span> &nbsp;-->
+<!--              <span class="prod-discount">150.000&#8363;</span>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
   <div class="container">
     <div class="row mt-5">
       <div class="col">

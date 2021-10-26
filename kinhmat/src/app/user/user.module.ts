@@ -12,6 +12,7 @@ import {NgxImageZoomModule} from "ngx-image-zoom";
 import {Router, RouterModule} from "@angular/router";
 import {DoKhucXaComponent} from './do-khuc-xa/do-khuc-xa.component';
 import {SidebarModule} from "ng-sidebar";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import {SidebarModule} from "ng-sidebar";
     NgxImgZoomModule,
     NgxImageZoomModule,
     RouterModule,
+    HttpClientModule
     // SidebarModule
   ]
 })
